@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Banner from "./Banner";
 import HomeService from "./HomeService";
+import AboutUs from "../AboutUs";
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             {Array.isArray(serviceCards) && <HomeService serviceCards={serviceCards}  />}
+            <AboutUs></AboutUs>
         </div>
     );
 };
