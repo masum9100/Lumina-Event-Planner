@@ -4,14 +4,15 @@ import HomeService from "./HomeService";
 
 
 const Home = () => {
-    const [serviceCard, setServiceCard]=useState([]);
+    const [serviceCards, setServiceCards]=useState([]);
 
     useEffect(()=>{
-        fetch("./data.json")
+        fetch("/data.json")
         .then (res => res.json())
-        .then (data=> setServiceCard(data))
+        .then (data=> setServiceCards(data))
         .catch(error => console.error("Error fetching data:", error))
     }, []);
+    
 
 
 
@@ -20,7 +21,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            {Array.isArray(serviceCard) && <HomeService serviceCard={serviceCard}  />}
+            {Array.isArray(serviceCards) && <HomeService serviceCards={serviceCards}  />}
         </div>
     );
 };
