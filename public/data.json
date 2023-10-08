@@ -12,7 +12,8 @@
       "home_image": "https://i.ibb.co/8ss4K8f/service1.jpg",
       "detail_image_one": "https://i.ibb.co/7R2hT2T/1.png",
       "detail_image_two": "https://i.ibb.co/ZdJ7Bvj/2.jpg",
-      "detail_image_three": "https://i.ibb.co/dBnMkLM/3.png"
+      "detail_image_three": "https://i.ibb.co/dBnMkLM/3.png",
+      "banner_image": "https://i.ibb.co/sFXnhDx/Artboard-1.jpg"
     },
     {
       "id": 2,
@@ -27,7 +28,8 @@
       "home_image": "https://i.ibb.co/x1BTQPs/service2.png",
       "detail_image_one": "https://i.ibb.co/xDv8VMB/Artboard-1.jpg",
       "detail_image_two": "https://i.ibb.co/crTRfd9/Artboard-2.png",
-      "detail_image_three": "https://i.ibb.co/R0YbsD0/Artboard-3.png"
+      "detail_image_three": "https://i.ibb.co/R0YbsD0/Artboard-3.png",
+      "banner_image": "https://i.ibb.co/NmRxvvC/Artboard-2.jpg"
     },
     {
       "id": 3,
@@ -42,7 +44,8 @@
       "home_image": "https://i.ibb.co/cyymFKc/service3.png",
       "detail_image_one": "https://i.ibb.co/4gc2Mjx/Artboard-1.jpg",
       "detail_image_two": "https://i.ibb.co/MBH8H0m/Artboard-2.png",
-      "detail_image_three": "https://i.ibb.co/DpV11Q1/Artboard-3.png"
+      "detail_image_three": "https://i.ibb.co/DpV11Q1/Artboard-3.png",
+      "banner_image": "https://i.ibb.co/PWCB275/Artboard-3.jpg"
     },
     {
       "id": 4,
@@ -57,7 +60,8 @@
       "home_image": "https://i.ibb.co/JpB7QCs/service4.png",
       "detail_image_one": "https://i.ibb.co/m9ZznTp/Artboard-1.jpg",
       "detail_image_two": "https://i.ibb.co/Nr8yd5w/Artboard-2.png",
-      "detail_image_three": "https://i.ibb.co/zmYcjLS/Artboard-3.png"
+      "detail_image_three": "https://i.ibb.co/zmYcjLS/Artboard-3.png",
+      "banner_image": "https://i.ibb.co/NTpgw7n/Artboard-4.jpg"
     },
     {
       "id": 5,
@@ -72,7 +76,8 @@
       "home_image": "https://i.ibb.co/4Ss66xP/service5.png",
       "detail_image_one": "https://i.ibb.co/MgVHjqX/Artboard-1.jpg",
       "detail_image_two": "https://i.ibb.co/pWpq4JP/Artboard-2.png",
-      "detail_image_three": "https://i.ibb.co/WyG9JWG/Artboard-3.png"
+      "detail_image_three": "https://i.ibb.co/WyG9JWG/Artboard-3.png",
+      "banner_image": "https://i.ibb.co/c3HFV0m/Artboard-5.jpg"
     },
     {
       "id": 6,
@@ -87,7 +92,8 @@
       "home_image": "https://i.ibb.co/f4z3q77/service6.png",
       "detail_image_one": "https://i.ibb.co/Cz0dHNG/Artboard-1.jpg",
       "detail_image_two": "https://i.ibb.co/XDKxwqn/Artboard-2.jpg",
-      "detail_image_three": "https://i.ibb.co/xSZF58K/Artboard-3.jpg"
+      "detail_image_three": "https://i.ibb.co/xSZF58K/Artboard-3.jpg",
+      "banner_image": "https://i.ibb.co/HC11Wjj/Artboard-6.jpg"
     }
   ]
   

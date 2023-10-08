@@ -6,6 +6,7 @@ import AboutUs from '../Component/AboutUs';
 import Gallery from '../Component/Gallery';
 import SignIn from '../Component/SignIn';
 import SignUp from '../Component/SignUp';
+import ServiceDetails from '../Component/ServiceDetails';
 
 
 const route = createBrowserRouter([
@@ -34,6 +35,11 @@ const route = createBrowserRouter([
                 path: "/sign-up",
                 element: <SignUp></SignUp>
             },
+            {
+                path: "/:id",
+                element: <ServiceDetails></ServiceDetails>,
+                loader: ()=> fetch('/data.json')
+            }
             
         ]
     }

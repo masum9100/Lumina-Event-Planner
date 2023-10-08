@@ -1,12 +1,12 @@
+import { NavLink } from "react-router-dom";
 
 
-const SingleServiceCard = ({ id, service_name, short_description, home_image, price, color }) => {
+const SingleServiceCard = ({card}) => {
 
+    const{id, service_name, short_description, home_image, price, color} = card || {}
     const cardStyles = {
         backgroundColor: color
     };
-
-
 
 
     return (
@@ -21,11 +21,12 @@ const SingleServiceCard = ({ id, service_name, short_description, home_image, pr
                     <div className="bg-[#A1400B] px-10 py-2 rounded-full">
                         <p className="text-white">Starting Price : {price}</p>
                     </div>
-                    <div className="card-actions">
+                    <NavLink to={`/${id}`}><div className="card-actions">
                         <button className=" bg-[#3EAE78] text-white font-semibold rounded px-4 py-2 hover:text-[#3EAE78] hover:bg-white ">Click for Details</button>
-                    </div>
+                    </div></NavLink>
                 </div>
             </div>
+            
         </div>
     );
 };

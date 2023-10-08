@@ -36,7 +36,7 @@ const AboutUs = () => {
                     </div>
 
                 </div>
-                <div className="grid lg:flex lg:justify-between mt-5">
+                <div className="grid lg:flex lg:justify-between">
 
                     <div className="w-full lg:w-1/2 mt-0 lg:mt-32 px-10 lg:px-0">
                         <h1 className="text-5xl font-bold text-left mb-10">Our Vision</h1>

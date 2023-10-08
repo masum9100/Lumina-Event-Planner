@@ -7,15 +7,14 @@ import HomeAdvantage from "./HomeAdvantage";
 
 
 const Home = () => {
-    const [serviceCards, setServiceCards]=useState([]);
+    const [cards, setCards] = useState([]);
 
-    useEffect(()=>{
-        fetch("/data.json")
-        .then (res => res.json())
-        .then (data=> setServiceCards(data))
-        .catch(error => console.error("Error fetching data:", error))
+    useEffect(() => {
+        fetch("./data.json")
+            .then(response => response.json())
+            .then(data => setCards(data))
+            .catch(error => console.error("Error fetching data:", error));
     }, []);
-    
 
 
 
@@ -24,7 +23,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            {Array.isArray(serviceCards) && <HomeService serviceCards={serviceCards}  />}
+            {Array.isArray(cards) && <HomeService cards={cards} />}
             <HomeAbout></HomeAbout>
             <HomeAdvantage></HomeAdvantage>
         </div>
