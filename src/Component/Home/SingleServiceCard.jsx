@@ -4,14 +4,12 @@ import { NavLink } from "react-router-dom";
 const SingleServiceCard = ({card}) => {
 
     const{id, service_name, short_description, home_image, price, color} = card || {}
-    const cardStyles = {
-        backgroundColor: color
-    };
+    
 
 
     return (
         <div>
-            <div className="card shadow-xl" style={cardStyles}>
+            <div className="card shadow-xl bg-[#EEFFEF]">
                 <figure className="px-3 pt-4">
                     <img src={home_image} alt="Service" className="rounded-xl" />
                 </figure>

@@ -26,7 +26,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <NavLink><button className="bg-[#A0410C] rounded-md px-4 py-2 text-white">Sign In</button></NavLink>
+                <NavLink to="/sign-in"><button className="bg-[#A0410C] rounded-md px-4 py-2 text-white">Sign In</button></NavLink>
             </div>
         </div>
     );

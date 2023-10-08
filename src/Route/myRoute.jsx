@@ -39,7 +39,8 @@ const route = createBrowserRouter([
                 path: "/:id",
                 element: <ServiceDetails></ServiceDetails>,
                 loader: ()=> fetch('/data.json')
-            }
+            },
+            
             
         ]
     }
