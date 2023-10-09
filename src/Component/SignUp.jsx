@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../Hook/AuthProvider";
+import { toast } from 'react-toastify';
 
 const SignUp = () => {
     const { signUp } = useContext(AuthContext);
@@ -18,6 +19,9 @@ const SignUp = () => {
             setError("");
             if (email, password) {
                 signUp(email, password).then((result) => {
+                    toast.success('Sign up successful!', {
+                        position: toast.POSITION.TOP_CENTER
+                    });
                     console.log(result.user);
                 }).catch((error) => {
                     console.error(error);
