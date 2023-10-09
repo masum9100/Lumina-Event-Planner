@@ -23,10 +23,10 @@ const SignIn = () => {
             .then((result) => {
                 console.log(result.user)
 
-                navigate(location?.state?location.state : "/")
+                navigate(location?.state?location.state : '/')
             })
             .catch ((err)=>{
-                setError(err.message)
+                setError("Invalid email or password")
             })
             
         }
@@ -41,7 +41,7 @@ const SignIn = () => {
             <div className="bg-[#EEFFEF] w-full md:w-3/4 lg:w-1/3 mx-auto p-10 mt-10">
                 <h1 className="text-3xl font-extrabold mb-5">Sign In to Your Account</h1>
                 <form className="">
-                    <p>{setError}</p>
+                    <p className='text-red-500'>{error}</p>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Email</span>
