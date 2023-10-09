@@ -7,25 +7,30 @@ import Gallery from '../Component/Gallery';
 import SignIn from '../Component/SignIn';
 import SignUp from '../Component/SignUp';
 import ServiceDetails from '../Component/ServiceDetails';
+import PrivateRoute from '../Hook/PrivateRoute';
 
 
 const route = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
-        children:[
+        children: [
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: ()=> fetch('/data.json')
+                loader: () => fetch('/data.json')
             },
             {
                 path: "/about-us",
-                element: <AboutUs></AboutUs>,
+                element: <PrivateRoute>
+                    <AboutUs></AboutUs>
+                </PrivateRoute>,
             },
             {
                 path: "/gallery",
-                element: <Gallery></Gallery>
+                element: <PrivateRoute>
+                    <Gallery></Gallery>
+                </PrivateRoute>
             },
             {
                 path: "/sign-in",
@@ -37,11 +42,13 @@ const route = createBrowserRouter([
             },
             {
                 path: "/:id",
-                element: <ServiceDetails></ServiceDetails>,
-                loader: ()=> fetch('/data.json')
+                element: <PrivateRoute>
+                    <ServiceDetails></ServiceDetails>
+                </PrivateRoute>,
+                loader: () => fetch('/data.json')
             },
-            
-            
+
+
         ]
     }
 ])
