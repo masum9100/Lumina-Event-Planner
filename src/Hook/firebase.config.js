@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAbJFb7hRM_plL_2jMNcmU5htRxKkHdJf0",
-  authDomain: "lumina-event-planer.firebaseapp.com",
-  projectId: "lumina-event-planer",
-  storageBucket: "lumina-event-planer.appspot.com",
-  messagingSenderId: "518325472161",
-  appId: "1:518325472161:web:1f18540bc38aac4eef99e0"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
